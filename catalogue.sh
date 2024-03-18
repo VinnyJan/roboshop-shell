@@ -1,4 +1,5 @@
 script_location=$(pwd)
+set -e
 
 
 yum module disable nodejs -y
@@ -6,12 +7,13 @@ yum module enable nodejs:18 -y
 
 
 yum install nodejs -y
-useradd roboshop
+#useradd roboshop
 
-mkdir /app 
+mkdir -p /app 
 
 
 curl -L -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip 
+rm -rf /app*
 cd /app 
 unzip /tmp/catalogue.zip
 
