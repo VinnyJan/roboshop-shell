@@ -7,3 +7,4 @@ yum install mongodb-org -y
 systemctl enable mongodb
 systemctl start mongodb
 
+systemctl restart mongod
