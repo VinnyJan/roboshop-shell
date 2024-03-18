@@ -1,2 +1,2 @@
 # roboshop-shell
-Configuring application using shell scripting 
+Automating roboshop application using shell scripting.
